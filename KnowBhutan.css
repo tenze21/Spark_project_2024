@@ -1,0 +1,1311 @@
+@layer reset {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: unset;
+  }
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+  img,
+  picture,
+  svg,
+  canvas {
+    /* display: block; */
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+:root {
+  --primary-dark: #ff086b;
+  --primary-light: #ff571e;
+  --gradient-to-right: linear-gradient(to right, #ff571e, #ff086b);
+  --gradient-to-bottom: linear-gradient(to bottom, #ff571e, #ff086b);
+  --gradient-to-left: linear-gradient(to left, #ff571e, #ff086b);
+  --text-dark: #161e31;
+  --text-light: #a4a4a4;
+  --white: #fff;
+  --star-animation: sparkle 1.5s infinite;
+  --header-font-size: 3rem;
+  --btn-text-small: 0.9375rem;
+  --btn-text-large: 1.5rem;
+  --paragraph-text-large: 1.25rem;
+  --paragraph-text-small: 0.9375rem;
+  --font-family: "Inter Tight", sans-serif;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 700;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+}
+.sidedrop{
+  .sidelinks{
+    .navclose{
+      @media screen and (max-width: 431px) {
+        margin-left: 1rem !important;
+      }
+      img{
+        margin-right: 12.4rem;
+        @media screen and (max-width:400px) {
+          margin-right: 11rem;
+        }
+      }
+    }
+  }
+}
+
+.knowbhutanimg img {
+  display: block;
+  margin-inline: auto;
+  height: 287px;
+  margin-top: 3rem;
+  @media screen and (max-width: 1030px) {
+    width: 950px;
+    margin-top: 2rem;
+  }
+  @media screen and (max-width: 915px) {
+    width: 865px;
+  }
+  @media screen and (max-width: 830px) {
+    width: 770px;
+    margin-top: 2rem;
+    margin-top: 0rem;
+  }
+  @media screen and (max-width: 770px) {
+    width: 740px;
+  }
+  @media screen and (max-width: 550px) {
+    width: 460px;
+    height: 150px;
+  }
+  @media screen and (max-width: 440px) {
+    width: 400px;
+    height: 150px;
+  }
+  @media screen and (max-width: 440px) {
+    width: 400px;
+    height: 150px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 370px;
+  }
+  @media screen and (max-width: 380px) {
+    width: 360px;
+  }
+  @media screen and (max-width: 370px) {
+    width: 350px;
+  }
+}
+
+.Bhutan,
+.climate {
+  text-align: center;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.Bhutan h1,
+.climate h1,
+.culture h1,
+.entertainment h1 {
+  font-size: 3rem;
+  color: var(--primary-light);
+  background: var(--white);
+  font-size: var(--header-font-size);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 1.5rem;
+  background-image: var(--gradient-to-right);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  @media screen and (max-width: 550px) {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+#star {
+  animation: var(--star-animation);
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bhutanstar1 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 29%;
+  top: -7%;
+  @media screen and (max-width: 1250px) {
+    left: 25%;
+  }
+  @media screen and (max-width: 1180px) {
+    left: 23%;
+  }
+  @media screen and (max-width: 1075px) {
+    left: 20%;
+  }
+  @media screen and (max-width: 980px) {
+    left: 17%;
+  }
+  @media screen and (max-width: 830px) {
+    left: 14%;
+  }
+  @media screen and (max-width: 825px) {
+    left: 12%;
+  }
+  @media screen and (max-width: 550px) {
+    width: 30px;
+    height: 30px;
+    left: 20%;
+    top: -9%;
+  }
+  @media screen and (max-width: 500px) {
+    left: 17%;
+  }
+  @media screen and (max-width: 440px) {
+    left: 12%;
+  }
+  @media screen and (max-width: 400px) {
+    left: 10%;
+  }
+  @media screen and (max-width: 370px) {
+    left: 7%;
+  }
+}
+.bhutanstar2 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 30%;
+  top: 16%;
+  @media screen and (max-width: 1250px) {
+    right: 26%;
+  }
+  @media screen and (max-width: 1180px) {
+    right: 24%;
+  }
+  @media screen and (max-width: 1075px) {
+    right: 21%;
+  }
+  @media screen and (max-width: 980px) {
+    right: 18%;
+  }
+  @media screen and (max-width: 830px) {
+    right: 15%;
+  }
+  @media screen and (max-width: 825px) {
+    right: 13%;
+  }
+  @media screen and (max-width: 550px) {
+    right: 20%;
+    top: 5%;
+  }
+  @media screen and (max-width: 550px) {
+    right: 17%;
+  }
+  @media screen and (max-width: 550px) {
+    right: 12%;
+  }
+  @media screen and (max-width: 550px) {
+    right: 10%;
+  }
+  @media screen and (max-width: 370px) {
+    right: 7%;
+  }
+}
+
+p {
+  opacity: 50%;
+  color: #161e31;
+  font-size: 1.25rem;
+  font-weight: 500;
+  max-width: 1114px;
+  margin: 0 auto;
+  @media screen and (max-width: 1030px) {
+    padding-inline: 1rem;
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 1rem;
+  }
+}
+
+.climatestar1 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 37%;
+  top: -1%;
+  @media screen and (max-width: 1250px) {
+    left: 35%;
+  }
+  @media screen and (max-width: 1180px) {
+    left: 33%;
+  }
+  @media screen and (max-width: 1075px) {
+    left: 31%;
+  }
+  @media screen and (max-width: 980px) {
+    left: 29%;
+  }
+  @media screen and (max-width: 915px) {
+    left: 30%;
+  }
+  @media screen and (max-width: 830px) {
+    left: 28%;
+  }
+  @media screen and (max-width: 825px) {
+    left: 27%;
+  }
+  @media screen and (max-width: 550px) {
+    width: 30px;
+    height: 30px;
+    left: 32%;
+  }
+  @media screen and (max-width: 500px) {
+    left: 29%;
+  }
+  @media screen and (max-width: 440px) {
+    left: 26%;
+  }
+  @media screen and (max-width: 400px) {
+    left: 24%;
+  }
+  @media screen and (max-width: 370px) {
+    left: 23%;
+  }
+}
+
+.climatestar2 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 38%;
+  top: 2%;
+  @media screen and (max-width: 1250px) {
+    right: 36%;
+  }
+  @media screen and (max-width: 1180px) {
+    right: 34%;
+  }
+  @media screen and (max-width: 1075px) {
+    right: 30%;
+  }
+  @media screen and (max-width: 980px) {
+    right: 29%;
+  }
+  @media screen and (max-width: 915px) {
+    right: 31%;
+  }
+  @media screen and (max-width: 830px) {
+    right: 28%;
+  }
+  @media screen and (max-width: 825px) {
+    right: 27%;
+  }
+  @media screen and (max-width: 550px) {
+    right: 31%;
+    top: 1%;
+  }
+  @media screen and (max-width: 500px) {
+    right: 29%;
+  }
+  @media screen and (max-width: 440px) {
+    right: 27%;
+  }
+  @media screen and (max-width: 400px) {
+    right: 24%;
+  }
+  @media screen and (max-width: 370px) {
+    right: 23%;
+  }
+}
+
+.climaterow1,
+.climaterow2 {
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+}
+
+.climaterow1 {
+  margin-top: 1rem;
+}
+
+.climaterow2 {
+  margin-bottom: 3rem;
+}
+
+.climaterow1 img,
+.climaterow2 img {
+  margin-top: 1rem;
+  @media screen and (max-width: 550px) {
+    margin-top: 0;
+  }
+}
+.climaterow1 img {
+  &:nth-child(1) {
+    @media screen and (max-width: 1030px) {
+      width: 330px;
+    }
+    @media screen and (max-width: 915px) {
+      width: 300px;
+    }
+    @media screen and (max-width: 830px) {
+      width: 275px;
+    }
+    @media screen and (max-width: 770px) {
+      width: 260px;
+    }
+    @media screen and (max-width: 550px) {
+      width: 150px;
+    }
+    @media screen and (max-width: 440px) {
+      width: 135px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 130px;
+    }
+    @media screen and (max-width: 380px) {
+      width: 120px;
+    }
+  }
+  &:nth-child(2) {
+    @media screen and (max-width: 1030px) {
+      width: 600px;
+    }
+    @media screen and (max-width: 915px) {
+      width: 550px;
+    }
+    @media screen and (max-width: 830px) {
+      width: 489px;
+    }
+    @media screen and (max-width: 770px) {
+      width: 470px;
+    }
+    @media screen and (max-width: 550px) {
+      width: 280px;
+    }
+    @media screen and (max-width: 440px) {
+      width: 255px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 240px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 230px;
+    }
+  }
+}
+.climaterow2 img {
+  &:nth-child(2) {
+    @media screen and (max-width: 1030px) {
+      width: 380px;
+    }
+    @media screen and (max-width: 915px) {
+      width: 350px;
+    }
+    @media screen and (max-width: 830px) {
+      width: 310px;
+    }
+    @media screen and (max-width: 770px) {
+      width: 300px;
+    }
+    @media screen and (max-width: 550px) {
+      width: 175px;
+      margin-top: 5px;
+    }
+    @media screen and (max-width: 440px) {
+      width: 155px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 150px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 140px;
+    }
+  }
+  &:nth-child(1) {
+    @media screen and (max-width: 1030px) {
+      width: 550px;
+    }
+    @media screen and (max-width: 915px) {
+      width: 505px;
+    }
+    @media screen and (max-width: 830px) {
+      width: 450px;
+    }
+    @media screen and (max-width: 770px) {
+      width: 430px;
+    }
+    @media screen and (max-width: 550px) {
+      width: 255px;
+      margin-top: 5px;
+    }
+    @media screen and (max-width: 440px) {
+      width: 235px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 220px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 210px;
+    }
+  }
+}
+
+.climateinfo {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(4, 248px);
+  place-content: center;
+  gap: 2.5vw;
+
+  @media screen and (max-width: 1030px) {
+    grid-template-columns: repeat(4, 215px);
+    h2 {
+      padding-left: 1rem;
+    }
+  }
+  @media screen and (max-width: 915px) {
+    grid-template-columns: repeat(4, 205px);
+  }
+  @media screen and (max-width: 830px) {
+    grid-template-columns: repeat(4, 190px);
+    gap: 0.5rem;
+    h2 {
+      padding-left: 1rem;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    grid-template-columns: repeat(4, 190px);
+    gap: 0rem;
+    h2 {
+      padding-left: 1rem;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    h2 {
+      padding-left: 1rem;
+    }
+  }
+}
+.column1 {
+  grid-column: 1/2;
+  section {
+    &:nth-child(1) {
+      margin-bottom: 1rem;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    grid-column: 1/1;
+  }
+}
+.column2 {
+  grid-column: 2/3;
+  @media screen and (max-width: 550px) {
+    grid-column: 1/1;
+  }
+}
+.column3 {
+  grid-column: 3/4;
+  @media screen and (max-width: 550px) {
+    grid-column: 1/1;
+  }
+}
+.column4 {
+  grid-column: 4/5;
+  @media screen and (max-width: 550px) {
+    grid-column: 1/1;
+  }
+}
+
+.climateinfo p {
+  margin-top: 1rem;
+  font-size: 16px;
+}
+
+.column1 div:nth-child(1) {
+  margin-bottom: 2rem;
+}
+
+.climateinfo div h2 {
+  color: #161e31;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.culture {
+  text-align: center;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.culturestar1 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 30%;
+  top: -1%;
+  @media screen and (max-width: 1250px) {
+    left: 26%;
+  }
+  @media screen and (max-width: 1180px) {
+    left: 24%;
+  }
+  @media screen and (max-width: 1075px) {
+    left: 22%;
+  }
+  @media screen and (max-width: 980px) {
+    left: 20%;
+  }
+  @media screen and (max-width: 915px) {
+    left: 18%;
+  }
+  @media screen and (max-width: 830px) {
+    left: 15%;
+  }
+  @media screen and (max-width: 825px) {
+    left: 13%;
+  }
+  @media screen and (max-width: 550px) {
+    width: 30px;
+    height: 30px;
+    left: 20%;
+  }
+  @media screen and (max-width: 500px) {
+    left: 12%;
+  }
+  @media screen and (max-width: 400px) {
+    left: 10%;
+  }
+  @media screen and (max-width: 370px) {
+    left: 8%;
+  }
+}
+
+.culturetar2 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 31%;
+  top: 2%;
+  @media screen and (max-width: 1250px) {
+    right: 27%;
+  }
+  @media screen and (max-width: 1180px) {
+    right: 25%;
+  }
+  @media screen and (max-width: 1075px) {
+    right: 23%;
+  }
+  @media screen and (max-width: 980px) {
+    right: 21%;
+  }
+  @media screen and (max-width: 915px) {
+    right: 19%;
+  }
+  @media screen and (max-width: 830px) {
+    right: 16%;
+  }
+  @media screen and (max-width: 825px) {
+    right: 14%;
+  }
+  @media screen and (max-width: 550px) {
+    top: 1%;
+    right: 20%;
+  }
+  @media screen and (max-width: 500px) {
+    top: 1%;
+    right: 12%;
+  }
+  @media screen and (max-width: 400px) {
+    right: 10%;
+  }
+  @media screen and (max-width: 370px) {
+    right: 8%;
+  }
+}
+
+.cultureimg1 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  @media screen and (max-width: 1030px) {
+    padding-inline: 1.5rem;
+  }
+  @media screen and (max-width: 830px) {
+    padding-inline: 1rem;
+  }
+  @media screen and (max-width: 550px) {
+    margin-bottom: 5px;
+    margin-top: 1.5rem;
+  }
+}
+
+.cultureimgrow1 {
+  display: flex;
+  justify-content: center;
+}
+
+.cultureimgrow1 img {
+  &:nth-child(1) {
+    @media screen and (max-width: 1030px) {
+      width: 465px;
+    }
+    @media screen and (max-width: 915px) {
+      width: 420px;
+    }
+    @media screen and (max-width: 830px) {
+      width: 375px;
+    }
+    @media screen and (max-width: 770px) {
+      width: 360px;
+    }
+    @media screen and (max-width: 550px) {
+      width: 250px;
+      margin-right: 5px !important;
+    }
+    @media screen and (max-width: 440px) {
+      width: 195px;
+    }
+    @media screen and (max-width: 415px) {
+      width: 188px;
+    }
+    @media screen and (max-width: 410px) {
+      width: 185px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 175px;
+    }
+    @media screen and (max-width: 380px) {
+      width: 170px;
+    }
+    @media screen and (max-width: 370px) {
+      width: 165px;
+    }
+  }
+  &:nth-child(2) {
+    @media screen and (max-width: 1030px) {
+      width: 465px;
+    }
+    @media screen and (max-width: 915px) {
+      width: 420px;
+    }
+    @media screen and (max-width: 830px) {
+      width: 375px;
+    }
+    @media screen and (max-width: 770px) {
+      width: 360px;
+    }
+    @media screen and (max-width: 550px) {
+      width: 250px;
+    }
+    @media screen and (max-width: 440px) {
+      width: 195px;
+    }
+    @media screen and (max-width: 415px) {
+      width: 188px;
+    }
+    @media screen and (max-width: 410px) {
+      width: 185px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 175px;
+    }
+    @media screen and (max-width: 380px) {
+      width: 170px;
+    }
+    @media screen and (max-width: 370px) {
+      width: 165px;
+    }
+  }
+}
+.cultureinfo {
+  margin-top: 2rem;
+  text-align: left;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(3, 335px);
+  gap: 3.5vw;
+  @media screen and (max-width: 1030px) {
+    grid-template-columns: repeat(3, 300px);
+    gap: 3vw;
+  }
+  @media screen and (max-width: 915px) {
+    grid-template-columns: repeat(3, 290px);
+    gap: 1vw;
+  }
+  @media screen and (max-width: 830px) {
+    grid-template-columns: repeat(3, 250px);
+    gap: 1vw;
+  }
+  @media screen and (max-width: 550px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+}
+.buddhism {
+  grid-column: 1/2;
+  @media screen and (max-width: 550px) {
+    grid-column: 1/1;
+  }
+}
+.hinduism {
+  grid-column: 2/3;
+  @media screen and (max-width: 550px) {
+    grid-column: 1/1;
+  }
+}
+.bon {
+  grid-column: 3/4;
+  @media screen and (max-width: 550px) {
+    grid-column: 1/1;
+  }
+}
+.cultureinfo h2 {
+  margin-bottom: 1rem;
+  @media screen and (max-width: 1030px) {
+    padding-left: 1rem;
+  }
+}
+
+.cultureinfo p,
+.entertainmentinfo p {
+  margin-top: 1rem;
+  font-size: 16px;
+}
+
+.entertainment {
+  text-align: center;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.entertainmentstar1 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 35%;
+  top: -1%;
+  @media screen and (max-width: 1250px) {
+    left: 33%;
+  }
+  @media screen and (max-width: 1180px) {
+    left: 31%;
+  }
+  @media screen and (max-width: 1075px) {
+    left: 29%;
+  }
+  @media screen and (max-width: 980px) {
+    left: 27%;
+  }
+  @media screen and (max-width: 915px) {
+    left: 29%;
+  }
+  @media screen and (max-width: 830px) {
+    left: 25%;
+  }
+  @media screen and (max-width: 825px) {
+    left: 23%;
+  }
+  @media screen and (max-width: 550px) {
+    width: 30px;
+    height: 30px;
+    left: 28%;
+    top: -1%;
+  }
+  @media screen and (max-width: 500px) {
+    left: 23%;
+    top: -1%;
+  }
+  @media screen and (max-width: 400px) {
+    left: 20%;
+  }
+}
+
+.entertainmentstar2 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 36%;
+  top: 2.5%;
+  @media screen and (max-width: 1250px) {
+    right: 33%;
+  }
+  @media screen and (max-width: 1180px) {
+    right: 31%;
+  }
+  @media screen and (max-width: 1075px) {
+    right: 30%;
+  }
+  @media screen and (max-width: 980px) {
+    right: 27%;
+  }
+  @media screen and (max-width: 915px) {
+    right: 30%;
+  }
+  @media screen and (max-width: 830px) {
+    right: 25%;
+  }
+  @media screen and (max-width: 825px) {
+    right: 23%;
+  }
+  @media screen and (max-width: 550px) {
+    right: 29%;
+    top: 1%;
+  }
+  @media screen and (max-width: 500px) {
+    right: 26%;
+  }
+  @media screen and (max-width: 400px) {
+    right: 22%;
+  }
+}
+
+.entertainmentrow1 {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.entertainmentrow1 img:nth-child(1) {
+  margin-right: 1rem;
+}
+
+.entertainmentrow1 img {
+  &:nth-child(1) {
+    @media screen and (max-width: 1030px) {
+      width: 330px;
+    }
+    @media screen and (max-width: 915px) {
+      width: 290px;
+    }
+    @media screen and (max-width: 830px) {
+      width: 267px;
+    }
+    @media screen and (max-width: 770px) {
+      width: 255px;
+    }
+    @media screen and (max-width: 550px) {
+      width: 150px;
+      margin-right: 5px !important;
+    }
+    @media screen and (max-width: 440px) {
+      width: 135px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 130px;
+    }
+    @media screen and (max-width: 380px) {
+      width: 120px;
+    }
+  }
+  &:nth-child(2) {
+    @media screen and (max-width: 1030px) {
+      width: 600px;
+    }
+    @media screen and (max-width: 915px) {
+      width: 550px;
+    }
+    @media screen and (max-width: 830px) {
+      width: 489px;
+    }
+    @media screen and (max-width: 770px) {
+      width: 470px;
+    }
+    @media screen and (max-width: 550px) {
+      width: 280px;
+    }
+    @media screen and (max-width: 440px) {
+      width: 255px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 240px;
+    }
+    @media screen and (max-width: 380px) {
+      width: 220px;
+    }
+  }
+}
+.entertainmentrow2 img {
+  &:nth-child(2) {
+    @media screen and (max-width: 1030px) {
+      width: 395px;
+    }
+    @media screen and (max-width: 915px) {
+      width: 350px;
+    }
+    @media screen and (max-width: 830px) {
+      width: 320px;
+    }
+    @media screen and (max-width: 770px) {
+      width: 310px;
+    }
+    @media screen and (max-width: 550px) {
+      width: 175px;
+    }
+    @media screen and (max-width: 440px) {
+      width: 160px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 150px;
+    }
+    @media screen and (max-width: 380px) {
+      width: 145px;
+    }
+  }
+  &:nth-child(1) {
+    @media screen and (max-width: 1030px) {
+      width: 535px;
+    }
+    @media screen and (max-width: 915px) {
+      width: 490px;
+    }
+    @media screen and (max-width: 830px) {
+      width: 440px;
+    }
+    @media screen and (max-width: 770px) {
+      width: 420px;
+    }
+    @media screen and (max-width: 550px) {
+      width: 255px;
+      margin-right: 5px !important;
+    }
+    @media screen and (max-width: 440px) {
+      width: 225px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 220px;
+    }
+    @media screen and (max-width: 380px) {
+      width: 195px;
+    }
+  }
+}
+
+.entertainmentrow2 {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.entertainmentrow2 img:nth-child(1) {
+  margin-right: 1rem;
+}
+
+.entertainmentinfo {
+  /* display: flex; */
+  margin-top: 2rem;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(4, 248px);
+  place-content: center;
+  gap: 3vw;
+  @media screen and (max-width: 1030px) {
+    grid-template-columns: repeat(4, 215px);
+    h2 {
+      padding-left: 1rem;
+    }
+  }
+  @media screen and (max-width: 915px) {
+    grid-template-columns: repeat(4, 200px);
+  }
+  @media screen and (max-width: 830px) {
+    grid-template-columns: repeat(4, 190px);
+    gap: 0.5rem;
+    h2 {
+      padding-left: 1rem;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    grid-template-columns: repeat(4, 190px);
+    gap: 0rem;
+    h2 {
+      padding-left: 1rem;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    h2 {
+      padding-left: 1rem;
+    }
+  }
+}
+
+.entertainmentinfo div {
+  margin-right: 3rem;
+  width: 40rem;
+}
+
+.curriculum_enroll {
+  display: flex;
+  background-color: #161e31;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 161px;
+  margin-top: 223px;
+  padding-inline: 13.2vw;
+  position: relative;
+  @media screen and (max-width: 1250px) {
+    padding-inline: 3rem;
+  }
+  @media screen and (max-width: 1030px) {
+    padding-inline: 1rem;
+    margin-top: 4rem;
+  }
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    padding: 1rem 1rem;
+  }
+}
+.curriculum_enroll div:nth-child(1) {
+  display: flex;
+  .sparklogo {
+    @media screen and (max-width: 1020px) {
+      width: 250px;
+    }
+  }
+}
+
+.component {
+  margin-left: 1vw;
+}
+
+.component p {
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #ff571e, #ff086b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  @media screen and (max-width: 1020px) {
+    font-size: 1rem;
+  }
+}
+
+.enroll_btn button {
+  width: 211px;
+  height: 43px;
+  border-radius: 12px;
+  background: linear-gradient(to right, #ff571e, #ff086b);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: var(--btn-text-small);
+}
+.enroll_btn button:hover {
+  background: var(--primary-light);
+}
+.enroll_btn button img {
+  position: relative;
+  left: 29px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.curriculum_enroll .stars .star1 img {
+  position: absolute;
+  top: 35%;
+  right: 37%;
+  height: 63px;
+  width: 63px;
+  animation: var(--star-animation);
+  @media screen and (max-width: 1030px) {
+    right: 32%;
+  }
+  @media screen and (max-width: 550px) {
+    display: none;
+  }
+}
+
+.curriculum_enroll .stars .star2 img {
+  position: absolute;
+  top: 25%;
+  right: 36%;
+  height: 30px;
+  width: 30px;
+  animation: var(--star-animation);
+  animation-delay: 0.75s;
+  @media screen and (max-width: 1030px) {
+    right: 29%;
+  }
+  @media screen and (max-width: 550px) {
+    display: none;
+  }
+}
+
+footer {
+  margin-top: 95px !important;
+  margin-bottom: 50px !important;
+  display: flex !important;
+  justify-content: center !important;
+  @media screen and (max-width: 1115px) {
+    margin-top: 3rem !important;
+  }
+  @media screen and (max-width: 830px) {
+    margin-top: 0rem !important;
+    margin-bottom: 0 !important;
+  }
+  @media screen and (max-width: 550px) {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+}
+.division-line01 {
+  background-image: var(--gradient-to-bottom);
+  width: 1114px !important;
+  height: 1px;
+  position: relative !important;
+  z-index: -5 !important;
+  @media screen and (max-width: 1115px) {
+    width: 805px !important;
+  }
+  @media screen and (max-width: 770px) {
+    width: 750px !important;
+  }
+  @media screen and (max-width: 550px) {
+    width: 400px !important;
+  }
+  @media screen and (max-width: 400px) {
+    width: 350px !important;
+  }
+}
+.division-line-star01 {
+  position: absolute !important;
+  right: 31rem;
+  top: -15.5px;
+  @media screen and (max-width: 1115px) {
+    right: 25rem;
+  }
+  @media screen and (max-width: 550px) {
+    right: 11.5rem;
+  }
+}
+.text {
+  display: flex;
+  justify-content: space-between !important;
+  padding-top: 40px;
+  margin-left: 0 !important;
+  width: 1114px !important;
+  p {
+    white-space: nowrap !important;
+  }
+  @media screen and (max-width: 1115px) {
+    width: 500px !important;
+  }
+  @media screen and (max-width: 1030px) {
+    display: block !important;
+    margin-inline: auto !important;
+  }
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 300px !important;
+  }
+}
+.sideInfo {
+  text-align: right;
+  font-size: var(--paragraph-text-large);
+  width: 350px;
+  color: var(--text-dark);
+  opacity: 50%;
+  @media screen and (max-width: 550px) {
+    text-align: center;
+    p {
+      padding-inline: 0 !important;
+    }
+  }
+}
+.footHead {
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 2px;
+  color: var(--primary-light);
+  background: var(--white);
+  background-image: var(--gradient-to-right);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  opacity: 100%;
+  margin-left: 0 !important;
+  @media screen and (max-width: 1115px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 1.5rem !important;
+  }
+}
+.sideInfo a {
+  color: #161e31;
+}
+
+.to_top {
+  position: fixed;
+  background: var(--gradient-to-bottom);
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  transform: rotate(90deg);
+  img {
+    transform: rotate(180deg);
+    translate: 0px 2px;
+  }
+  &:hover {
+    background: var(--primary-light);
+  }
+  @media screen and (max-width: 550px) {
+    padding: 10px 15px;
+    right: 10px;
+  }
+}

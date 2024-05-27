@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="HomePageCSS.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spark HomePage</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico.svg">
+  </head>
+  <body>
+    <nav>
+      <div class="gcitlogo"><img src="Images/GCITlogo.svg" alt="" /></div>
+      <div class="links">
+        <ul class="link_list">
+          <li><a href="index.html"  class="active">Home</a></li>
+          <li><a href="About.html">About GCIT</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="Curriculums.html" >Curriculums</a></li>
+          <li><a href="KnowBhutan.html">Know Bhutan</a></li>
+          
+        </ul>
+        <div class="dropdown" onclick="showSidebar()">
+          <img src="Images/dropdown.svg" alt="">
+        </div>
+        
+        
+        <ul class="sidedrop" style="display: none;">
+          <div class="sidelinks">
+            <div onclick="hideSidebar()" class="navclose"><a href="#"><img src="Images/close.svg" alt=""><a></li></div>
+              <div style="text-align: center;">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="About.html">About GCIT</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="Curriculums.html">Curriculums</a></li>
+                <li><a href="KnowBhutan.html">Know Bhutan</a></li>
+              </div>
+
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <section class="spark_logo">
+      <img src="Images/SPARK_Home.svg" alt="" />
+      <h4 style="font-weight: 400; color: #161E31;">International Students Programme</h4>
+    </section>
+    <section class="std_image">
+      
+      <div class="stdimg1">
+        <img src="JPG-images/std1.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="stdimg2">
+        <img src="JPG-images/std2.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="stdimg3">
+        <img src="JPG-images/std3.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="stdimg3_1">
+        <img src="JPG-images/std3.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="stdimg4">
+        <img src="JPG-images/std4.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="stdimg5">
+        <img src="JPG-images/std5.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="stdimg6">
+        <img src="JPG-images/std6.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="stdimg7">
+        <img src="JPG-images/std7.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="stdimg8">
+        <img src="JPG-images/std8.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="stdimg9">
+        <img src="JPG-images/std9.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="stars">
+        <div class="star1"><img src="Images/star.svg" alt="" /></div>
+        <div class="star2"><img src="Images/star.svg" alt="" /></div>
+        <div class="star3"><img src="Images/star.svg" alt="" /></div>
+        <div class="star4"><img src="Images/star.svg" alt="" /></div>
+        <div class="star5"><img src="Images/star.svg" alt="" /></div>
+      </div>
+    </section>
+    <section class="certification">
+      <div class="card_text">
+        <h3>Certification Programmes</h3>
+        <p>
+          Nestled in the heart of Bhutan, SPARK offers a unique certification program designed specifically for international students. This program provides an immersive experience, equipping students with valuable skills and knowledge while they explore the breathtaking Himalayan kingdom.
+        </p>
+      </div>
+      <div class="card_box">
+        <div class="programme_wrapper">
+          <a href="#"><img src="Images/Rectangle 15.png" alt="" class="programme_img" /></a> 
+          <a href="#" class="programme-title">Sustainability in the World of AI Technology</a>
+          <img src="Images/Arrow 1.svg" alt="" class="arrow_img" />
+        </div>
+        <div class="programme_wrapper">
+          <a href="#"><img src="Images/Rectangle 70.png" alt="" class="programme_img" /></a> 
+          <a href="#" class="programme-title">Generative Digital Media</a>
+          <img src="Images/Arrow 1.svg" alt="" class="arrow_img" />
+        </div>
+        <div class="programme_wrapper">
+          <a href="#"><img src="Images/Rectangle 71.png" alt="" class="programme_img" /></a> 
+          <a href="#" class="programme-title">AI for Business</a>
+          <img src="Images/Arrow 1.svg" alt="" class="arrow_img" />
+        </div>
+      </div>
+    </section>
+    <section class="coursepath">
+      <div class="courseinfo">
+        <div class="courseword">
+          <h1>Customise Course Path</h1>
+        <p>Crafting a custom course path with your friends or team members empower you to tailor your learning journey to your specific goals. This involves identifying your skill gaps and desired outcomes, then selecting best possible Bhutan experience.</p>
+        </div>
+        <div class="courseimages">
+          <img src="Images/star.svg" alt="" class="courseStar1">
+          <img src="Images/star.svg" alt="" class="courseStar2">
+          <div style="display: flex; align-items: center; justify-content: center;">
+            <button class="courseBtn">
+              <a href="coursepath_customise.html" style="text-decoration: none; color: white;">Customise</a><img src="Images/Arrow 2.svg" alt="" />
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="lone-star">
+      <img src="Images/star.svg" alt="" aria-hidden="true" />
+    </div>
+    <section class="registration">
+      <h2>Register here</h2>
+      <form action="https://api.web3forms.com/submit" method="post" class="registration-form" id="enroll">
+        <input type="hidden" name="access_key" value="c64aa046-7fd8-4b8b-8161-ba67136e8bf9">
+        <div class="form-flex-div">
+          <div>
+            <div class="name-field">
+              <label for="name" class="name" id="js_label">Full name</label>
+              <input
+                type="text"
+                id="name"
+                name="Full name"
+                placeholder="Must be same with your identification"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="name-field-ios">
+              <input
+                type="text"
+                id="name-ios"
+                name="Full name"
+                placeholder="Full Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email address"
+              class="input-field"
+              required
+            />
+            <input
+              type="text"
+              id="date-of-birth"
+              name="date-of-birth"
+              placeholder="Date of birth"
+              class="input-field"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              required
+            />
+            <input type="text" id="date-of-birth-ios" name="date-of-birth" class="input-field" placeholder="Date of birth" required />
+          </div>
+          <div class="division-line"></div>
+          <img src="Images/star.svg" alt="" class="division-line-star" />
+          <div>
+            <select id="gender" name="gender" class="input-field" required>
+              <option value="" disabled selected>Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+            <div class="dropdown1">
+              <input type="text" id="country" name="country" class="select" value="Afganistan">
+                <img class="flag" src="http://purecatamphetamine.github.io/country-flag-icons/3x2/AF.svg" alt="United States">
+              </input>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu">
+              <li data-val="AF">Afghanistan</li>
+              <li data-val="AL">Albania</li>
+              <li data-val="DZ">Algeria</li>
+              <li data-val="AS">American Samoa</li>
+              <li data-val="AD">Andorra</li>
+              <li data-val="AO">Angola</li>
+              <li data-val="AI">Anguilla</li>
+              <li data-val="AQ">Antarctica</li>
+              <li data-val="AG">Antigua and Barbuda</li>
+              <li data-val="AR">Argentina</li>
+              <li data-val="AM">Armenia</li>
+              <li data-val="AW">Aruba</li>
+              <li data-val="AU">Australia</li>
+              <li data-val="AT">Austria</li>
+              <li data-val="AZ">Azerbaijan</li>
+              <li data-val="BS">Bahamas</li>
+              <li data-val="BH">Bahrain</li>
+              <li data-val="BD">Bangladesh</li>
+              <li data-val="BB">Barbados</li>
+              <li data-val="BY">Belarus</li>
+              <li data-val="BE">Belgium</li>
+              <li data-val="BZ">Belize</li>
+              <li data-val="BJ">Benin</li>
+              <li data-val="BM">Bermuda</li>
+              <li data-val="BT">Bhutan</li>
+              <li data-val="BO">Bolivia</li>
+              <li data-val="BA">Bosnia and Herzegovina</li>
+              <li data-val="BW">Botswana</li>
+              <li data-val="BV">Bouvet Island</li>
+              <li data-val="BR">Brazil</li>
+              <li data-val="IO">British Indian Ocean Territory</li>
+              <li data-val="BN">Brunei Darussalam</li>
+              <li data-val="BG">Bulgaria</li>
+              <li data-val="BF">Burkina Faso</li>
+              <li data-val="BI">Burundi</li>
+              <li data-val="KH">Cambodia</li>
+              <li data-val="CM">Cameroon</li>
+              <li data-val="CA">Canada</li>
+              <li data-val="CV">Cape Verde</li>
+              <li data-val="KY">Cayman Islands</li>
+              <li data-val="CF">Central African Republic</li>
+              <li data-val="TD">Chad</li>
+              <li data-val="CL">Chile</li>
+              <li data-val="CN">China</li>
+              <li data-val="CX">Christmas Island</li>
+              <li data-val="CC">Cocos (Keeling) Islands</li>
+              <li data-val="CO">Colombia</li>
+              <li data-val="KM">Comoros</li>
+              <li data-val="CG">Congo</li>
+              <li data-val="CD">Congo, the Democratic Republic of the</li>
+              <li data-val="CK">Cook Islands</li>
+              <li data-val="CR">Costa Rica</li>
+              <li data-val="CI">Cote D'Ivoire</li>
+              <li data-val="HR">Croatia</li>
+              <li data-val="CU">Cuba</li>
+              <li data-val="CY">Cyprus</li>
+              <li data-val="CZ">Czech Republic</li>
+              <li data-val="DK">Denmark</li>
+              <li data-val="DJ">Djibouti</li>
+              <li data-val="DM">Dominica</li>
+              <li data-val="DO">Dominican Republic</li>
+              <li data-val="EC">Ecuador</li>
+              <li data-val="EG">Egypt</li>
+              <li data-val="SV">El Salvador</li>
+              <li data-val="GQ">Equatorial Guinea</li>
+              <li data-val="ER">Eritrea</li>
+              <li data-val="EE">Estonia</li>
+              <li data-val="ET">Ethiopia</li>
+              <li data-val="FK">Falkland Islands (Malvinas)</li>
+              <li data-val="FO">Faroe Islands</li>
+              <li data-val="FJ">Fiji</li>
+              <li data-val="FI">Finland</li>
+              <li data-val="FR">France</li>
+              <li data-val="GF">French Guiana</li>
+              <li data-val="PF">French Polynesia</li>
+              <li data-val="TF">French Southern Territories</li>
+              <li data-val="GA">Gabon</li>
+              <li data-val="GM">Gambia</li>
+              <li data-val="GE">Georgia</li>
+              <li data-val="DE">Germany</li>
+              <li data-val="GH">Ghana</li>
+              <li data-val="GI">Gibraltar</li>
+              <li data-val="GR">Greece</li>
+              <li data-val="GL">Greenland</li>
+              <li data-val="GD">Grenada</li>
+              <li data-val="GP">Guadeloupe</li>
+              <li data-val="GU">Guam</li>
+              <li data-val="GT">Guatemala</li>
+              <li data-val="GN">Guinea</li>
+              <li data-val="GW">Guinea-Bissau</li>
+              <li data-val="GY">Guyana</li>
+              <li data-val="HT">Haiti</li>
+              <li data-val="HM">Heard Island and Mcdonald Islands</li>
+              <li data-val="VA">Holy See (Vatican City State)</li>
+              <li data-val="HN">Honduras</li>
+              <li data-val="HK">Hong Kong</li>
+              <li data-val="HU">Hungary</li>
+              <li data-val="IS">Iceland</li>
+              <li data-val="IN">India</li>
+              <li data-val="ID">Indonesia</li>
+              <li data-val="IR">Iran, Islamic Republic of</li>
+              <li data-val="IQ">Iraq</li>
+              <li data-val="IE">Ireland</li>
+              <li data-val="IL">Israel</li>
+              <li data-val="IT">Italy</li>
+              <li data-val="JM">Jamaica</li>
+              <li data-val="JP">Japan</li>
+              <li data-val="JO">Jordan</li>
+              <li data-val="KZ">Kazakhstan</li>
+              <li data-val="KE">Kenya</li>
+              <li data-val="KI">Kiribati</li>
+              <li data-val="KP">Korea, Democratic People's Republic of</li>
+              <li data-val="KR">Korea, Republic of</li>
+              <li data-val="KW">Kuwait</li>
+              <li data-val="KG">Kyrgyzstan</li>
+              <li data-val="LA">Lao People's Democratic Republic</li>
+              <li data-val="LV">Latvia</li>
+              <li data-val="LB">Lebanon</li>
+              <li data-val="LS">Lesotho</li>
+              <li data-val="LR">Liberia</li>
+              <li data-val="LY">Libyan Arab Jamahiriya</li>
+              <li data-val="LI">Liechtenstein</li>
+              <li data-val="LT">Lithuania</li>
+              <li data-val="LU">Luxembourg</li>
+              <li data-val="MO">Macao</li>
+              <li data-val="MK">Macedonia, the Former Yugoslav Republic of</li>
+              <li data-val="MG">Madagascar</li>
+              <li data-val="MW">Malawi</li>
+              <li data-val="MY">Malaysia</li>
+              <li data-val="MV">Maldives</li>
+              <li data-val="ML">Mali</li>
+              <li data-val="MT">Malta</li>
+              <li data-val="MH">Marshall Islands</li>
+              <li data-val="MQ">Martinique</li>
+              <li data-val="MR">Mauritania</li>
+              <li data-val="MU">Mauritius</li>
+              <li data-val="YT">Mayotte</li>
+              <li data-val="MX">Mexico</li>
+              <li data-val="FM">Micronesia, Federated States of</li>
+              <li data-val="MD">Moldova, Republic of</li>
+              <li data-val="MC">Monaco</li>
+              <li data-val="MN">Mongolia</li>
+              <li data-val="MS">Montserrat</li>
+              <li data-val="MA">Morocco</li>
+              <li data-val="MZ">Mozambique</li>
+              <li data-val="MM">Myanmar</li>
+              <li data-val="NA">Namibia</li>
+              <li data-val="NR">Nauru</li>
+              <li data-val="NP">Nepal</li>
+              <li data-val="NL">Netherlands</li>
+              <li data-val="AN">Netherlands Antilles</li>
+              <li data-val="NC">New Caledonia</li>
+              <li data-val="NZ">New Zealand</li>
+              <li data-val="NI">Nicaragua</li>
+              <li data-val="NE">Niger</li>
+              <li data-val="NG">Nigeria</li>
+              <li data-val="NU">Niue</li>
+              <li data-val="NF">Norfolk Island</li>
+              <li data-val="MP">Northern Mariana Islands</li>
+              <li data-val="NO">Norway</li>
+              <li data-val="OM">Oman</li>
+              <li data-val="PK">Pakistan</li>
+              <li data-val="PW">Palau</li>
+              <li data-val="PS">Palestinian Territory, Occupied</li>
+              <li data-val="PA">Panama</li>
+              <li data-val="PG">Papua New Guinea</li>
+              <li data-val="PY">Paraguay</li>
+              <li data-val="PE">Peru</li>
+              <li data-val="PH">Philippines</li>
+              <li data-val="PN">Pitcairn</li>
+              <li data-val="PL">Poland</li>
+              <li data-val="PT">Portugal</li>
+              <li data-val="PR">Puerto Rico</li>
+              <li data-val="QA">Qatar</li>
+              <li data-val="RE">Reunion</li>
+              <li data-val="RO">Romania</li>
+              <li data-val="RU">Russian Federation</li>
+              <li data-val="RW">Rwanda</li>
+              <li data-val="SH">Saint Helena</li>
+              <li data-val="KN">Saint Kitts and Nevis</li>
+              <li data-val="LC">Saint Lucia</li>
+              <li data-val="PM">Saint Pierre and Miquelon</li>
+              <li data-val="VC">Saint Vincent and the Grenadines</li>
+              <li data-val="WS">Samoa</li>
+              <li data-val="SM">San Marino</li>
+              <li data-val="ST">Sao Tome and Principe</li>
+              <li data-val="SA">Saudi Arabia</li>
+              <li data-val="SN">Senegal</li>
+              <li data-val="CS">Serbia and Montenegro</li>
+              <li data-val="SC">Seychelles</li>
+              <li data-val="SL">Sierra Leone</li>
+              <li data-val="SG">Singapore</li>
+              <li data-val="SK">Slovakia</li>
+              <li data-val="SI">Slovenia</li>
+              <li data-val="SB">Solomon Islands</li>
+              <li data-val="SO">Somalia</li>
+              <li data-val="ZA">South Africa</li>
+              <li data-val="GS">South Georgia and the South Sandwich Islands</li>
+              <li data-val="ES">Spain</li>
+              <li data-val="LK">Sri Lanka</li>
+              <li data-val="SD">Sudan</li>
+              <li data-val="SR">Suriname</li>
+              <li data-val="SJ">Svalbard and Jan Mayen</li>
+              <li data-val="SZ">Swaziland</li>
+              <li data-val="SE">Sweden</li>
+              <li data-val="CH">Switzerland</li>
+              <li data-val="SY">Syrian Arab Republic</li>
+              <li data-val="TW">Taiwan, Province of China</li>
+              <li data-val="TJ">Tajikistan</li>
+              <li data-val="TZ">Tanzania, United Republic of</li>
+              <li data-val="TH">Thailand</li>
+              <li data-val="TL">Timor-Leste</li>
+              <li data-val="TG">Togo</li>
+              <li data-val="TK">Tokelau</li>
+              <li data-val="TO">Tonga</li>
+              <li data-val="TT">Trinidad and Tobago</li>
+              <li data-val="TN">Tunisia</li>
+              <li data-val="TR">Turkey</li>
+              <li data-val="TM">Turkmenistan</li>
+              <li data-val="TC">Turks and Caicos Islands</li>
+              <li data-val="TV">Tuvalu</li>
+              <li data-val="UG">Uganda</li>
+              <li data-val="UA">Ukraine</li>
+              <li data-val="AE">United Arab Emirates</li>
+              <li data-val="GB">United Kingdom</li>
+              <li data-val="US">United States</li>
+              <li data-val="UM">United States Minor Outlying Islands</li>
+              <li data-val="UY">Uruguay</li>
+              <li data-val="UZ">Uzbekistan</li>
+              <li data-val="VU">Vanuatu</li>
+              <li data-val="VE">Venezuela</li>
+              <li data-val="VN">Viet Nam</li>
+              <li data-val="VG">Virgin Islands, British</li>
+              <li data-val="VI">Virgin Islands, U.s.</li>
+              <li data-val="WF">Wallis and Futuna</li>
+              <li data-val="EH">Western Sahara</li>
+              <li data-val="YE">Yemen</li>
+              <li data-val="ZM">Zambia</li>
+              <li data-val="ZW">Zimbabwe</li>
+          </ul>
+            <input
+              type="text"
+              id="course"
+              name="course"
+              placeholder="Course path"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 2rem;">
+          <button class="Enroll-btn">
+            Enrol Now <img src="Images/Arrow 2.svg" alt="" />
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="know-bhutan">
+      <h3>Know Bhutan</h3>
+      <p>
+        Escape to a land untouched by time: Bhutan. This unique kingdom of
+        Bhutan offers a chance to experience a living tapestry of culture and
+        religion. Hike through ancient monasteries clinging to cliffsides, where
+        monks in saffron robes chant and share their wisdom. Immerse yourself in
+        the philosophy of Gross National Happiness.Bhutan promises an
+        unforgettable encounter with a culture unlike any other.
+      </p>
+      <div class="know_bhutan_img">
+        <img src="Images/Rectangle 12.jpg" alt="" class="landscape" />
+        <img src="Images/Rectangle 13.jpg" alt="" class="landscape" />
+        <img src="Images/Rectangle 14.jpg" alt="" class="landscape" />
+        <img src="Images/star.svg" alt="" aria-hidden="true" class="star01" />
+        <img src="Images/star.svg" alt="" aria-hidden="true" class="star02" />
+      </div>
+    </section>
+    <footer>
+      <div class="foot">
+        <div class="division-line01">
+          <img src="Images/star.svg" alt="" class="division-line-star01" aria-hidden="true"/>
+        </div>
+        <div class="text">
+          <p class="footHead">Let's SPARK together!</p>
+          <aside class="sideInfo">
+            <p>All rights reserved 2024</p>
+            <p>
+              Email:
+              <a href="mailto:spark.gcit@rub.edu.bt" style="text-decoration: none"
+                >spark.gcit@rub.edu.bt</a
+              >
+            </p>
+          </aside>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // JS for dropdown navagation
+      // opening nav bars
+      const sidedrop = document.querySelector('.sidedrop')
+    function showSidebar(){
+      sidedrop.style.display = 'flex'
+    }
+    // closing nav bars
+    function hideSidebar(){
+      sidedrop.style.display = 'none'
+    }
+
+      // Disabled right click to prevent the images form being downloaded
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+
+      // toggle the visibility of the Full name input field label
+      const nameEl=document.querySelector("#name");
+      const nameLabel= document.querySelector("#js_label");
+      function toggleNameLabel(){
+        if(nameEl.value===""){
+          nameLabel.classList.remove("hidden");
+        }else{
+          nameLabel.classList.add("hidden");
+        }
+      }
+      nameEl.addEventListener("input",toggleNameLabel);
+      toggleNameLabel();
+
+      if (/iPhone|iPod|iPad/.test(navigator.userAgent)) {
+        // If user is on iOS, hide the native date input and show the text input
+        document.getElementById('date-of-birth').style.display = 'none';
+        document.getElementById('date-of-birth-ios').style.display = 'block';
+        document.querySelector('.name-field').style.display='none';
+        document.querySelector('.name-field-ios').style.display='block';
+      }else{
+        document.getElementById('date-of-birth').style.display = 'block';
+        document.getElementById('date-of-birth-ios').style.display = 'none';
+        document.querySelector('.name-field').style.display='block';
+        document.querySelector('.name-field-ios').style.display='none';
+
+    }
+    </script>
+    <script src="country.js"></script>
+  </body>
+</html>

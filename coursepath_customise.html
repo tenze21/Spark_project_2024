@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customise Your Course Path</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico.svg" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="coursepath_customise.css" />
+    <link rel="stylesheet" href="HomePageCSS.css">
+  </head>
+  <body>
+    <nav>
+      <div class="gcitlogo"><img src="Images/GCITlogo.svg" alt="" /></div>
+      <div class="links">
+        <ul class="link_list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About GCIT</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="Curriculums.html">Curriculums</a></li>
+          <li><a href="KnowBhutan.html" class="active">Know Bhutan</a></li>
+          
+        </ul>
+        <div class="dropdown" onclick="showSidebar()">
+          <img src="Images/dropdown.svg" alt="">
+        </div>
+        
+        
+        <ul class="sidedrop" style="display: none;">
+          <div class="sidelinks">
+            <div onclick="hideSidebar()" class="navclose"><a href="#"><img src="Images/close.svg" alt=""><a></li>
+              <div style="text-align: center;" class="mainlink">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About GCIT</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="Curriculums.html">Curriculums</a></li>
+                <li><a href="KnowBhutan.html" >Know Bhutan</a></li>
+              </div>
+
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="hero_text">
+        <h1>Customise Course Path</h1>
+        <p>
+          Crafting a custom course path with your friends or team members
+          empower you to tailor your learning journey to your specific goals.
+          This involves identifying your skill gaps and desired outcomes, then
+          selecting best possible Bhutan experience.
+        </p>
+      </div>
+      <div class="hero_star">
+        <img src="images/star_white_large.svg" alt="" aria-hidden="true" />
+        <img src="images/star_white_large.svg" alt="" aria-hidden="true" />
+      </div>
+    </div>
+    <main>
+      <div class="header">
+        <h2>Craft Your Own Learning Journey</h2>
+        <p>
+          For this customised journey, we encourage at least a group of 7<span
+            >*</span
+          >
+          enrolees to make the learning and experience more fun and memorable.
+        </p>
+      </div>
+      <form action="https://api.web3forms.com/submit" method="post" id="course_custimization_form">
+        <input type="hidden" name="access_key" value="c64aa046-7fd8-4b8b-8161-ba67136e8bf9">
+        <div class="input_fields">
+          <div class="form_field">
+            <input
+              type="text"
+              name="Full name"
+              id="name"
+              placeholder="Full name"
+              required
+            />
+          </div>
+          <div class="form_field">
+            <input
+              type="text"
+              name="Organization Name"
+              id="organization_name"
+              placeholder="Organization Name (Optional)"
+            />
+          </div>
+          <div class="form_field">
+            <input
+              type="email"
+              name="Email address"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="form_field">
+            <select name="Number of days" id="number_of_days" required>
+              <option value="">Number of Days</option>
+              <option value="7">7 days</option>
+              <option value="11">11 days</option>
+              <option value="30">30 days</option>
+            </select>
+            <i class='bx bxs-down-arrow'></i>
+          </div>
+          <div class="radio_field">
+            <label for="community_service">Community Service</label>
+            <input
+              type="checkbox"
+              name="Community service"
+              id="community_service"
+              value="community service"
+              checked
+            />
+            <div class="checkbox check">
+              <div class="nested checked"></div>
+            </div>
+          </div>
+          <div class="radio_field">
+            <label for="cultural_experience">Cultural Experience</label>
+            <input
+              type="checkbox"
+              name="Cultural Experience"
+              id="cultural_experience"
+              value="cultural experience"
+              checked
+            />
+            <div class="checkbox check">
+              <div class="nested checked"></div>
+            </div>
+          </div>
+        </div>
+        <div class="course_selection">
+          <!-- fieldset start -->
+          <fieldset>
+            <legend>Sustainability in the World of AI Technology</legend>
+            <div class="form_field">
+              <input type="checkbox" id="course1" name="course" value="Intro to AI and Sustainability">
+              <label for="course1">Intro to AI and Sustainability</label>
+            </div>
+            <div class="form_field">
+              <input type="checkbox" id="course2" name="course" value="Sustainable AI Algorithms">
+              <label for="course2">Sustainable AI Algorithms</label>
+            </div>
+            <div class="form_field">
+              <input type="checkbox" id="course3" name="course" value="Renewable Energy and AI">
+              <label for="course3">Renewable Energy and AI</label>
+            </div>
+            <div class="form_field">
+              <input type="checkbox" id="course4" name="course" value="Circular Economy and AI">
+              <label for="course4">Circular Economy and AI</label>
+            </div>
+            <div class="form_field">
+              <input type="checkbox" id="course5" name="course" value="Biodiversity Conservation">
+              <label for="course5">Biodiversity Conservation</label>
+            </div>
+          </fieldset>
+          <!-- fieldset end -->
+          <!-- fieldset start  -->
+          <fieldset>
+            <legend>Generative Digital Media</legend>
+            <div class="form_field">
+              <input type="checkbox" id="course6" name="course" value="Intro to AI and Digital Media Design">
+              <label for="course6">Intro to AI and Digital Media Design</label>
+            </div>
+            <div class="form_field">
+              <input type="checkbox" id="course7" name="course" value="AI Digital Graphics">
+              <label for="course7">AI Digital Graphics</label>
+            </div>
+            <div class="form_field">
+              <input type="checkbox" id="course8" name="course" value="AI Digital Photography">
+              <label for="course8">AI Digital Photography</label>
+            </div>
+            <div class="form_field">
+              <input type="checkbox" id="course9" name="course" value="AI Digital Audio">
+              <label for="course9">AI Digital Audio</label>
+            </div>
+            <div class="form_field">
+              <input type="checkbox" id="course10" name="course" value="AI Digital Video">
+              <label for="course10">AI Digital Video</label>
+            </div>
+          </fieldset>
+          <!-- fieldset end -->
+          <!-- fieldset start -->
+          <fieldset>
+            <legend>Artificial Intelligence for Business</legend>
+            <div class="form_field">
+              <input type="checkbox" id="course11" name="course" value="Intro to AI and Business">
+              <label for="course11">Intro to AI and Business</label>
+            </div>
+            <div class="form_field">
+              <input type="checkbox" id="course12" name="course" value="Machine Learning Techniques for AI">
+              <label for="course12">Machine Learning Techniques for AI</label>
+            </div>
+            <div class="form_field">
+              <input type="checkbox" id="course13" name="course" value="Real-Time Financial Analysis with AI">
+              <label for="course13">Real-Time Financial Analysis with AI</label>
+            </div>
+            <div class="form_field">
+              <input type="checkbox" id="course14" name="course" value="Ethics, Risks, and AI Governance">
+              <label for="course14">Ethics, Risks, and AI Governance</label>
+            </div>
+          </fieldset>
+          <!-- fieldset end -->
+        </div>
+        <div class="preference">
+          <label for="preference">Do you prefer a one-on-one learning or other topics?</label>
+          <textarea name="preference" id="preference" cols="30" rows="10" placeholder="Suggest a topic"></textarea>
+        </div>
+        <button class="submit_btn">Submit Proposal <img src="images/Arrow 1.svg" alt="" aria-hidden="true"></button>
+        <p class="promo_text">* A group of 7 enrolees will receive 15% airfare discount with DrukAir, the national airline of Bhutan</p>
+      </form>
+    </main>
+    <footer>
+      <div class="foot">
+        <div class="division-line01">
+          <img src="Images/star.svg" alt="" class="division-line-star01" />
+        </div>
+        <div class="text">
+          <p class="footHead">Let's SPARK together!</p>
+          <aside class="sideInfo">
+            <p>All rights reserved 2024</p>
+            <p>
+              Email:
+              <a href="mailto:spark.gcit@rub.edu.bt" style="text-decoration: none"
+                >spark.gcit@rub.edu.bt</a
+              >
+            </p>
+          </aside>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Disabled right click to prevent the images form being downloaded
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+      // community service and cultural experience checkbox functionality
+      const radio_field = document.querySelectorAll(".radio_field");
+      const inputCommunityService = document.querySelector("#community_service");
+      const inputCulturalExperience = document.querySelector("#cultural_experience");
+      const checkbox = document.querySelectorAll(".checkbox");
+      const checked = document.querySelectorAll(".nested");
+
+      radio_field[0].addEventListener("click", ()=>{
+        inputCommunityService.toggleAttribute("checked");
+        if (inputCommunityService.checked){
+          checkbox[0].classList.add("check");
+          checked[0].classList.add("checked");
+        }else{
+          checkbox[0].classList.remove("check");
+          checked[0].classList.remove("checked");
+        }
+      })
+
+      radio_field[1].addEventListener("click", ()=>{
+        inputCulturalExperience.toggleAttribute("checked");
+        if (inputCulturalExperience.checked){
+          checkbox[1].classList.add("check");
+          checked[1].classList.add("checked");
+        }else{
+          checkbox[1].classList.remove("check");
+          checked[1].classList.remove("checked");
+        }
+      })
+    </script>
+    <script>
+      // JS for dropdown navagation
+      // opening nav bars
+      const sidedrop = document.querySelector('.sidedrop')
+    function showSidebar(){
+      sidedrop.style.display = 'flex'
+    }
+    // closing nav bars
+    function hideSidebar(){
+      sidedrop.style.display = 'none'
+    }
+    </script>
+  </body>
+</html>

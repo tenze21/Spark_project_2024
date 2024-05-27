@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="HomePageCSS.css">
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico.svg">
+</head>
+<body>
+    <nav>
+        <div class="gcitlogo"><img src="Images/GCITlogo.svg" alt="" /></div>
+        <div class="links">
+          <ul class="link_list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html" class="active">About GCIT</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="Curriculums.html">Curriculums</a></li>
+            <li><a href="KnowBhutan.html">Know Bhutan</a></li>
+            
+          </ul>
+          <div class="dropdown" onclick="showSidebar()">
+            <img src="Images/dropdown.svg" alt="">
+          </div>
+          
+          
+          <ul class="sidedrop" style="display: none;">
+            <div class="sidelinks">
+              <div onclick="hideSidebar()" class="navclose"><a href="#"><img src="Images/close.svg" alt=""><a></li></div>
+                <div style="text-align: center;">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="About.html" class="active">About GCIT</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li><a href="Curriculums.html">Curriculums</a></li>
+                  <li><a href="KnowBhutan.html">Know Bhutan</a></li>
+                </div>
+  
+            </div>
+          </ul>
+        </div>
+      </nav>
+    <section class="GCIT">
+        <img src="Images/star.svg" alt="" class="GCITstar">
+        <h1>What is GCIT?</h1>
+        <p>Gyalpozhing College of Information Technology (GCIT), affiliated with the Royal University of Bhutan, was inaugurated in 2017 and offers a modern approach to information technology education. The college emphasizes practical and project-based learning, with a strong focus on cybersecurity, artificial intelligence, blockchain, and full-stack development.</p>
+    </section>
+    <section class="course">
+        <img src="Images/star.svg" alt="" class="coursestar">
+        <h1>Academic Programmes</h1>
+        <div class="courserow">
+        <div class="courserow1">
+            <div>
+                <p>BS in Computer Science</p>
+                <h2>AI Development & Data Science</h2>
+            </div>
+            <div>
+                <p>BS in Computer Science</p>
+                <h2>Blockchain Development</h2>
+            </div>
+        </div>
+        <div class="courserow2">
+            <div>
+                <p>BS in Computer Science</p>
+                <h2>Full Stack Development</h2>
+            </div>
+            <div>
+                <p>Bachelor of</p>
+                <h2>Interactive Design & Development</h2>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="campuslife">
+        <img src="Images/star.svg" alt="" class="campusstar">
+        <h1>Campus Life</h1>
+        <p>The campus atmosphere is vibrant, with a strong emphasis on both academic excellence and holistic development. Students can participate in a variety of tech-focused groups and events, such as hackathons, coding competitions, and workshops on emerging technologies. These activities not only enhance their technical skills but also promote teamwork and problem-solving abilities.</p>
+        <p>Outdoor activities are also a significant part of the student experience at GCIT, given Bhutan’s beautiful natural environment. Hiking, trekking, and other outdoor sports like football and basketball are popular, allowing students to explore the breathtaking surroundings and engage with the community's commitment to environmental stewardship.</p>
+        <div class="campusrow1">
+            <div><img src="Images/campuslifeimg1.png" alt=""></div>
+            <div><img src="Images/campuslifeimg2.png" alt=""></div>
+            <div><img src="Images/campuslifeimg3.png" alt=""></div>
+        </div>
+        <div class="campusrow2">
+            <div><img src="Images/campuslifeimg4.png" alt=""></div>
+            <div><img src="Images/campuslifeimg5.png" alt=""></div>
+            <div><img src="Images/campuslifeimg6.png" alt=""></div>
+        </div>
+    </section>
+    <section class="faculty">
+        <img src="Images/star.svg" alt="" class="facultystar">
+        <h1>Faculty</h1>
+        <p>GCIT's faculty comprises a diverse mix of local and foreign experts, enhancing the educational experience with a blend of international perspectives and local insights. This team is dedicated to fostering a learning environment that emphasizes industry-relevant skills and global standards.</p>
+    </section>
+    <section class="button">
+      <a href="https://www.gcit.edu.bt/">
+        <button class="websitebtn">
+          Visit GCIT Official Website
+      </button>
+      </a>
+    </section>
+    <footer>
+        <div class="foot">
+          <div class="division-line01">
+            <img src="Images/star.svg" alt="" class="division-line-star01" aria-hidden="true"/>
+          </div>
+          <div class="text">
+            <p class="footHead" style="opacity: 100%; width: 100%;">Let's SPARK together!</p>
+            <aside class="sideInfo" style="width: 100%;">
+              <p>All rights reserved 2024</p>
+              <p>
+                Email:
+                <a href="mailto:spark.gcit@rub.edu.bt" style="text-decoration: none">spark.gcit@rub.edu.bt</a>
+              </p>
+            </aside>
+          </div>
+        </div>
+      </footer>
+</body>
+<script>
+    const sidedrop = document.querySelector('.sidedrop')
+    function showSidebar(){
+      sidedrop.style.display = 'flex'
+    }
+    // closing nav bars
+    function hideSidebar(){
+      sidedrop.style.display = 'none'
+    }
+
+</script>
+</html>
